@@ -7099,7 +7099,7 @@ var // Document location
 // #8138, IE may throw an exception when accessing
 // a field from window.location if document.domain has been set
 try {
-	ajaxLocation = location.href;
+	ajaxLocation = window.location;
 } catch( e ) {
 	// Use the href attribute of an A element
 	// since IE will modify it given document.location
